@@ -1,4 +1,4 @@
 
-<app-video-list [videos]="videoListData"></app-video-list>
-<app-video-player></app-video-player>
+<app-video-list (onVideoSelected)="videoSelected($event)" [videos]="videoListData"></app-video-list>
+<app-video-player [video]="selectedVideo"></app-video-player>
 <app-stat-filters></app-stat-filters>
