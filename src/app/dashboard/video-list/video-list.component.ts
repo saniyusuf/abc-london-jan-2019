@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent implements OnInit {
+  selectedVideoID;
 
   videos = videoData;
 
@@ -14,6 +15,9 @@ export class VideoListComponent implements OnInit {
   ngOnInit() {
   }
 
+  setSelectedVideoID(id: string) {
+    this.selectedVideoID = id;
+  }
 }
 
 
